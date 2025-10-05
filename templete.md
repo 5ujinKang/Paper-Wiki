@@ -1,14 +1,14 @@
 # 📄 Paper Summary Template
 
 
-# A. During the Reading
+# During the Reading
 
-## A-1. Title
+## 1. Title
 - **Keywords:**  
 - **Core Idea (inferred from keywords):**  
 
 
-## A-2. Abstract
+## 2. Abstract
 - Problem statement ( What problem does the paper try to solve, and why is it significant? )
   : 
 - Limitations of prior work  :
@@ -17,7 +17,7 @@
 
 ---
 
-## A-3. Introduction
+## 3. Introduction
 - Problem statement  
 - Design principle  
 - Overall storyline of the work  
@@ -34,7 +34,7 @@
 
 ---
 
-## A-4. Low-Level Details
+## 4. Low-Level Details
 
 ### Background
 - **What is the motivation behind the problem?**  
@@ -57,7 +57,7 @@
 
 ---
 
-## A-5. Evaluation
+## 5. Evaluation
 **Before reading:**  
 - What questions should the evaluation answer? (e.g., Does it outperform? Improve reliability?)  
 
@@ -70,8 +70,7 @@
 
 ---
 
-## A-6. Limitations / Discussion / Related Work
-**Focus:**  
+## 6. Limitations / Discussion / Related Work
 - What trade-offs or limitations are mentioned?  
 - Are they reasonable?  
 - Do they inspire new ideas?  
@@ -80,22 +79,17 @@
 
 ---
 
-## A-7. Summary of One-Pass Reading
-**Understanding Check:**  
-- [ ] I understand the overall storyline.  
-- [ ] I understand the design’s key principle.  
-- [ ] I know what prior work was and how this differs.  
-- [ ] I identified limitations or trade-offs.  
+## 7. Summary of One-Pass Reading
+
 
 **If unclear:**  
-- Which section needs re-reading?  
-- Which parts can safely be skipped (not crucial to storyline)?  
+
 
 ---
 
-# 🅱️ B. Thinking After Reading
+# Summary
 
-## B-1. Validating the Storyline
+## 1. Validating the Storyline
 **Check each step logically:**
 - Does the target problem really exist and matter?  
 - Is it significant and timely?  
@@ -108,11 +102,8 @@
 - Are explanations reasonable?  
 - Are trade-offs justified?
 
-**My Validation Notes:**  
 
----
-
-## B-2. Learn from the Writing
+## 2. Learn from the Writing
 **High-Level Writing (Storyline):**  
 - Would I position or organize the storyline differently?  
 - Would reordering sections or changing focus help clarity?  
@@ -123,9 +114,8 @@
 - Which parts were *confusing* — how would I improve them?  
 - What writing or presentation techniques stood out (good or bad)?  
 
----
 
-## B-3. How the Paper Helps My Own Work
+# 3. How the Paper Helps My Own Work
 **Learned Knowledge:**  
 - New scenario / problem  
 - New design principle(s)  
@@ -142,32 +132,11 @@
 
 ---
 
-# 🅲 C. Reading Group / Discussion / Reviewing
-
-## Reading Group or Presentation Prep
-- Storyline summary for presentation:  
-- Key discussion points:  
-- Writing and design lessons to highlight:  
-
-## For Paper Reviewing Practice
-- **Storyline summary:**  
-- **Validation of the storyline:**  
+# Summary
+- **Storyline summary:**
+  
 - **Comments for authors:**  
   - Strengths:  
   - Weaknesses / Missing points:  
 
----
 
-# 🅳 D. Final Reflection
-
-- How long did it take to read and think through the paper?  
-- Was it worth the time?  
-- What did I learn about *reading technique* itself from this paper?  
-- What can I do better next time (e.g., speed, focus, analysis)?  
-
-✅ **End-of-Reading Self-Check**
-- [ ] Understood both high-level and low-level ideas  
-- [ ] Validated the logic and reasoning  
-- [ ] Learned new knowledge or inspiration  
-- [ ] Reflected on writing quality  
-- [ ] Connected it to my research work  
