@@ -1,16 +1,13 @@
 # Paper-Wiki
 Personal wiki for Systems research : paper summaries, questions, and key insights
 
-<details>
- <summary> To read a paper</summary>
+
+## To read a paper<
  - Aim to read 2 papers per week (1 paper for holiday season)
 - Read widely in Systems / upto 5 recent years  
 - from : SOSP, OSDI, SIGCOMM // ASPLOS, NSDI, MICRO //
-</details>
 
 # Paper-List
-Personal wiki for Systems research : paper summaries, questions, and key insights
-
 <details>
  <summary>Before 2025</summary>
 
