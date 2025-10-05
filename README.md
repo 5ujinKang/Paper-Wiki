@@ -43,8 +43,10 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 </details>
 
 <details>
- <summary> 2025</summary>
- - OSDI '20 / Caladan: Mitigating Interference at Microsecond Timescales
- - OSDI '25 / Extending Applications Safely and Efficiently
+<summary>2025</summary>
+
+- OSDI '20 / Caladan: Mitigating Interference at Microsecond Timescales
+- OSDI '25 / Extending Applications Safely and Efficiently
 
 </details>
+
