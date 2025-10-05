@@ -7,20 +7,17 @@
 - **Keywords:**  
 - **Core Idea (inferred from keywords):**  
 
----
 
 ## A-2. Abstract
-**Focus:**  
-- Problem statement — What problem does the paper try to solve, and why is it significant?  
-- Limitations of prior work  
-- High-level design principle / key novelty  
+- Problem statement ( What problem does the paper try to solve, and why is it significant? )
+  : 
+- Limitations of prior work  :
+- High-level design principle / key novelty :
 
-**My Understanding:**  
 
 ---
 
 ## A-3. Introduction
-**Focus:**  
 - Problem statement  
 - Design principle  
 - Overall storyline of the work  
