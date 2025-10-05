@@ -9,7 +9,7 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 
 # Paper-List
 <details>
- <summary>Before 2025(17)</summary>
+ <summary>Before 2025 (17)</summary>
 
 - ASPLOS / Benchmarking, Analysis, and Optimization of Serverless Function Snapshots
   
