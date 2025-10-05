@@ -15,8 +15,6 @@
 - High-level design principle / key novelty :
 
 
----
-
 ## 3. Introduction
 - Problem statement  
 - Design principle  
@@ -32,7 +30,6 @@
 
 **Notes (if unclear parts):**  
 
----
 
 ## 4. Low-Level Details
 
@@ -55,7 +52,6 @@
 - **Key implementation details learned:**  
 - **Does the implementation strengthen the storyline understanding?**  
 
----
 
 ## 5. Evaluation
 **Before reading:**  
@@ -68,7 +64,6 @@
 
 **Key Results Summary:**  
 
----
 
 ## 6. Limitations / Discussion / Related Work
 - What trade-offs or limitations are mentioned?  
@@ -76,8 +71,6 @@
 - Do they inspire new ideas?  
 
 **My Observations / Thoughts:**  
-
----
 
 ## 7. Summary of One-Pass Reading
 
@@ -130,13 +123,5 @@
 
 **How It Connects to My Research:**  
 
----
-
-# Summary
-- **Storyline summary:**
-  
-- **Comments for authors:**  
-  - Strengths:  
-  - Weaknesses / Missing points:  
 
 
