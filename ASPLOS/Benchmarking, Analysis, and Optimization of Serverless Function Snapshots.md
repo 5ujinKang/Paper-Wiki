@@ -1,3 +1,5 @@
+my presenation slides : https://docs.google.com/presentation/d/1d3wfehxgUbBJhlxRJfxRy3I7JtcGpTACrCyT37dZvwU/edit
+
 ## Snapshotting : 기존 산업에서 cold start overhead를 해결하기 위해 사용하는 방법
 
 To reduce
