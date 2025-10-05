@@ -1,5 +1,7 @@
 [MEGA: Overcoming Traditional Problems with OS Huge Page Management (acm.org)](https://dl.acm.org/doi/pdf/10.1145/3319647.3325839?casa_token=gFbH49qvYEEAAAAA:Jw8warRQR_0ylBtxcGQXTCuWcfj3pXNqaI1BfQsFbKIZ8HrSNgbvQVWF_cBmd9ICmUTlpMQHnGtz)
 
+Notes : https://drive.google.com/file/d/1YyuJ4bBwforSioCmExQxHOW0fptuYcOC/view?usp=sharing
+
 ### ABSTRACT
 
 - demonstrate the benefits and drawbacks of using
