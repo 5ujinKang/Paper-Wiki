@@ -1,8 +1,6 @@
 # 📄 Paper Summary Template
 
 
-# During the Reading
-
 ## 1. Title
 - **Keywords:**  
 - **Core Idea (inferred from keywords):**  
@@ -72,56 +70,13 @@
 
 **My Observations / Thoughts:**  
 
-## 7. Summary of One-Pass Reading
+## 7. Learned Knowledge:
 
 
-**If unclear:**  
+
+## 8. Ideas or Inspirations: 
 
 
----
-
-# Summary
-
-## 1. Validating the Storyline
-**Check each step logically:**
-- Does the target problem really exist and matter?  
-- Is it significant and timely?  
-- Is there missing related work?  
-- Are prior work limitations important and inherent?  
-- Does the design really solve those limitations?  
-- Does each design point contribute to solving the problem?  
-- Are the evaluation baselines fair and complete?  
-- Do results validate each claim?  
-- Are explanations reasonable?  
-- Are trade-offs justified?
-
-
-## 2. Learn from the Writing
-**High-Level Writing (Storyline):**  
-- Would I position or organize the storyline differently?  
-- Would reordering sections or changing focus help clarity?  
-- Should certain sections be longer or shorter?  
-
-**Low-Level Writing (Details):**  
-- Which parts were *very clear* — why?  
-- Which parts were *confusing* — how would I improve them?  
-- What writing or presentation techniques stood out (good or bad)?  
-
-
-# 3. How the Paper Helps My Own Work
-**Learned Knowledge:**  
-- New scenario / problem  
-- New design principle(s)  
-- New techniques  
-
-**Ideas or Inspirations:**  
-- What trade-offs are interesting?  
-- Can I make a different trade-off?  
-- Can I apply a different design principle to a similar problem?  
-- What if I add new goals (e.g., reliability, security)?  
-- What if I explore co-designs (e.g., hardware offloading, smartNICs, smartSSDs)?  
-
-**How It Connects to My Research:**  
 
 
 
