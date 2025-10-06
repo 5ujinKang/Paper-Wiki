@@ -62,21 +62,25 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 **Problem statement :**
 <br>
 - software extension is important : add features, improve performance/security etc
-- current extension frameworks face challenges : balancing key extensibility features
- 1. trade off between extension interconnectedness vs. safety
- 2. trade off between extension isolation vs. safety
+- current extension frameworks are inefficient because they employ heavyweight techniques for isolation and safety
+  1. extension safety : trade off between extension interconnectedness vs. safety (deployment specific)
+  2. extension isolation : prevents a host appication from harming an extension, necessary for security monitoring extensions
+  3. extension efficiency : requires the extensions execute at near-native speed
 <br>
 
 **Design principle :**
 <br>
-- presents EIM : a new approach for specifying the interface between an extension and a host
-- presents bpftime : a new extension runtime system
-- 
+- EIM : a new approach for specifying the interface between an extension and a host
+ - Supports fine-grained interconnectedness / safety tradeoffs
+ - represent the extension features needed for interconnectedness or restricted for safety through a single abstraction called a resource.
 <br>
-
-**Overall storyline of the work :**
-*( what is the problem, what are the most relevant related works, what are the claimed limitations, the mapping between the design points and the challenges.)*
-<br>
+- bpftime : a new extension runtime system
+ - support EIM & extension isolation
+ - 1) uses lightweight approaches : provide extension safety & isolation
+  - for safety : Uses extended Berkeley Packet Filter (eBPF) style verification => 0 runtime overhead
+  - for isolation : uses ERIM-style intraprocess hardware-supported isolation => minimal overhead
+ - 2) introduces concealed extention entries : improve efficiency by eliminating runtime overhead from extension entries that are not in use by a running process
+ - fully compatible with with eBPF -> can extend both the kernel & applications
 
 <br> <br>
 
