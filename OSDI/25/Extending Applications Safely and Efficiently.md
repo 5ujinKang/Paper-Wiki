@@ -7,12 +7,10 @@
 
 ## Summary :
 **Background**
-&nbsp;&nbsp;
-Application extension is very important because it can improve performance, add features, enhance security, etc. 
+<br> Application extension is very important because it can improve performance, add features, enhance security, etc. 
 <br>
 
 **Attack Point**
-&nbsp; &nbsp;
 But the current tools are neither safe nor efficient, because they suffer from a security-efficiency tradeoff. <br>
 Since every extension has different requirements for security & efficiency, it's hard to optimize the environment for each.
 <br>
