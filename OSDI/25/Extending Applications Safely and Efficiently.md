@@ -62,12 +62,18 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 <br>
 - software extension is important : add features, improve performance/security etc
 - current extension frameworks are inefficient because they employ heavyweight techniques for isolation and safety
-  1. extension safety : trade off between extension interconnectedness vs. safety (deployment specific)
+  1. extension safety : tradeoff between extension interconnectedness vs. safety (deployment specific)
   2. extension isolation : prevents a host appication from harming an extension, necessary for security monitoring extensions
   3. extension efficiency : requires the extensions execute at near-native speed
 <br>
 
-**Design principle :**
+**the design principle of the work :**
+<br>
+- Use lightweight techniques to provide safety and isolation
+- Figure out the way to solve fine-grained interconnectedness/safety
+<br>
+
+**The Overall storyline of the work :**
 <br>
 - **EIM : a new approach for specifying the interface between an extension and a host**
   - Supports fine-grained interconnectedness / safety tradeoffs
