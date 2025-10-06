@@ -7,22 +7,25 @@
 
 ## Summary :
 **Background**
-
+Application extension is very important because it can improve performance, add features, enhance security, etc. 
 <br>
 
 **Attack Point**
-
+But the current tools are neither safe nor efficient, because they suffer from a security-efficiency tradeoff. 
+Since every extension has different requirements for security & efficiency, it's hard to optimize the environment for each.
 <br>
 
-**Solution** 
+**Their Solution** 
+Suggest a new model EIM, optimize for each extension, fulfilling their requirements for security & efficiency level. 
+EIM abstracts the features of extension by seeing extension as a "resource", and provides a framework to deal with each. 
+By fulfilling each extension's requirements for security/efficiency level, it solves the security-efficiency trade-off problem. 
+<br>
+
+**Performance**
 
 <br>
 
 **Limitation**
-
-<br>
-
-**Performance**
 
 ---
 <br> <br>
@@ -30,11 +33,14 @@
 # 🔎 Details
 
 ## 0. Abstract
-- Problem statement ( What problem does the paper try to solve, and why is it significant? )
+- **High-level Problem statement**
+  *( what kind of the problem the paper is trying to solve, why is this a significant and/or interesting problem, what is the limitation of the prior work)*
   : the current state-of-the-art is neither safe nor efficient enough.
-- Limitations of prior work  :
-- High-level design principle / key novelty : 
-presents new model, EIM and extension framework that enforces an EIM specification, bpftime.
+
+<br>
+
+- **High-level design principle / key novelty** 
+: presents new model, EIM and extension framework that enforces an EIM specification, bpftime.
   - Extension Interface Model (EIM) : model that treats each required feature of an extension as a resource
 
 
