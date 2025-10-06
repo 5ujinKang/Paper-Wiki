@@ -3,14 +3,17 @@
 - **Keywords:**  Application extending, safety, efficiency
 - **Core Idea (inferred from keywords):**  Maybe it is suggesting a better way to extend the application safer and more efficient
 
-<br> <br>
-## 1. Summary :
+<br>
+
+## Summary :
 **Background**
 
 <br>
+
 **Attack Point**
 
 <br>
+
 **Solution** 
 
 <br>
@@ -18,12 +21,13 @@
 **Limitation**
 
 <br>
+
 **Performance**
 
 ---
 # 🔎 Details
 <br> <br>
-## 2. Abstract
+## 0. Abstract
 - Problem statement ( What problem does the paper try to solve, and why is it significant? )
   : the current state-of-the-art is neither safe nor efficient enough.
 - Limitations of prior work  :
@@ -34,7 +38,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br> <br>
 
-## 3. Introduction
+## 1. Introduction
 - What they bring : 
 - Problem statement  
 - Design principle  
@@ -56,7 +60,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br> <br>
 
-## 4. Low-Level Details
+## 2. Low-Level Details
 
 <br>
 
@@ -87,7 +91,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br> <br>
 
-## 5. Evaluation
+## 3. Evaluation
 
 <br>
 
@@ -107,7 +111,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br> <br>
 
-## 6. Limitations / Discussion / Related Work
+## 4. Limitations / Discussion / Related Work
 - What trade-offs or limitations are mentioned?  
 - Are they reasonable?  
 - Do they inspire new ideas?  
@@ -121,7 +125,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br> <br>
 
-## 7. Learned Knowledge:
+## 5. Learned Knowledge:
 
 
 <br> <br>
