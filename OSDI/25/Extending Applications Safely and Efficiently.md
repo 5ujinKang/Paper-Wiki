@@ -79,10 +79,10 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 **bpftime : a new extension runtime system**
 - support EIM & extension isolation
 1. uses lightweight approaches : provide extension safety & isolation
- - for safety : Uses extended Berkeley Packet Filter (eBPF) style verification => 0 runtime overhead
- - for isolation : uses ERIM-style intraprocess hardware-supported isolation => minimal overhead
+  - for safety : Uses extended Berkeley Packet Filter (eBPF) style verification => 0 runtime overhead
+  - for isolation : uses ERIM-style intraprocess hardware-supported isolation => minimal overhead
 2. introduces concealed extention entries : improve efficiency by eliminating runtime overhead from extension entries that are not in use by a running process
- - fully compatible with with eBPF -> can extend both the kernel & applications
+- fully compatible with with eBPF -> can extend both the kernel & applications
 
 <br> <br>
 
