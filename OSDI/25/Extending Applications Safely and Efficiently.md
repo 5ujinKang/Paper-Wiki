@@ -73,7 +73,9 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 - EIM : a new approach for specifying the interface between an extension and a host
  - Supports fine-grained interconnectedness / safety tradeoffs
  - represent the extension features needed for interconnectedness or restricted for safety through a single abstraction called a resource.
+
 <br>
+
 - bpftime : a new extension runtime system
  - support EIM & extension isolation
  - 1) uses lightweight approaches : provide extension safety & isolation
