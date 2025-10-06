@@ -1,6 +1,6 @@
 # 📄 Paper Summary Template  
+<br> <br>
 
-  
 ## 1. Title
 - **Keywords:**  
 - **Core Idea (inferred from keywords):**  
