@@ -70,7 +70,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 **Design principle :**
 <br>
-**EIM : a new approach for specifying the interface between an extension and a host**
+- **EIM : a new approach for specifying the interface between an extension and a host**
  - Supports fine-grained interconnectedness / safety tradeoffs
  - represent the extension features needed for interconnectedness or restricted for safety through a single abstraction called a resource.
 
