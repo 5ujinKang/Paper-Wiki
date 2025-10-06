@@ -130,11 +130,14 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 ---
 ### Design
 **Design principle(s) :**
+- Handle buggy extensions. Keep the system stable 
+- Don't let the application modify or corrupt the state used by extensions to alter the extension's behavior
 
 <br>
 
 **Design goals or challenges :**  
 <br>
+Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation efficiently.
 
 **How the design addresses the challenges :**  
 <br>
@@ -146,6 +149,13 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 **Before reading, think of how to implement the design :**  
 
 <br>
+- EIM :  
+  - As a framework to abstract the levels of interconnectedness and security, it requires elements such as fields and methods in a class, making it function like an API.
+  - Because it is also intended to work with the kernel, additional factors like privilege levels must be considered.
+  - Abstractly speaking, system-level design is inherently complex, but since EIM is primarily a methodology, the actual functionality is implemented by bpftime. 
+
+- bpftime :
+ - ㅎ
 
 **Make sure you understand the storyline**
 <br>
