@@ -25,8 +25,10 @@
 **Performance**
 
 ---
-# 🔎 Details
 <br> <br>
+
+# 🔎 Details
+
 ## 0. Abstract
 - Problem statement ( What problem does the paper try to solve, and why is it significant? )
   : the current state-of-the-art is neither safe nor efficient enough.
@@ -119,18 +121,18 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 <br>
 
 
-# 🧐 After Reading
+# 🧐 My Works
 
-**My Observations / Thoughts:**  
-
-<br> <br>
-
-## 5. Learned Knowledge:
-
+## Questions:
 
 <br> <br>
 
-## 8. Ideas or Inspirations: 
+## Learned Knowledge:
+
+
+<br> <br>
+
+## Insights: 
 
 
 
