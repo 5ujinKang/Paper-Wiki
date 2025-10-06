@@ -79,7 +79,9 @@
 - Are those questions addressed?  
 - Are explanations of results logical?  
 - Any suspicious or unclear claims?  
+
 <br>
+
 **Key Results Summary:**  
 
 <br> <br>
