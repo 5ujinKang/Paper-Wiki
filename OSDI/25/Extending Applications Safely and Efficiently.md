@@ -15,6 +15,10 @@ But the current tools are neither safe nor efficient, because they suffer from a
 Since every extension has different requirements for security & efficiency, it's hard to optimize the environment for each.
 <br>
 
+**Goal**
+Suggest the way to extend Applications Safely and Efficiently 
+<br>
+
 **Their Solution** 
 Suggest a new model EIM, optimize for each extension, fulfilling their requirements for security & efficiency level. <br>
 EIM abstracts the features of extension by seeing extension as a "resource", and provides a framework to deal with each. <br>
@@ -27,45 +31,52 @@ By fulfilling each extension's requirements for security/efficiency level, it so
 
 **Limitation**
 
+
+
+
 ---
 <br> <br>
+
+
+
 
 # 🔎 Details
 
 ## 0. Abstract
-- **High-level Problem statement**  
+**High-level Problem statement :**  
   *( what kind of the problem the paper is trying to solve, why is this a significant and/or interesting problem, what is the limitation of the prior work)*
   <br>
-  : the current state-of-the-art is neither safe nor efficient enough.
+  the current state-of-the-art is neither safe nor efficient enough.
 
 <br>
 
-- **High-level design principle / key novelty** 
-: presents new model, EIM and extension framework that enforces an EIM specification, bpftime.
+**High-level design principle / key novelty :** 
+<br>
+presents new model, EIM and extension framework that enforces an EIM specification, bpftime.
   - Extension Interface Model (EIM) : model that treats each required feature of an extension as a resource
 
 
 <br> <br>
 
 ## 1. Introduction
-- What they bring : 
-- Problem statement  
-- Design principle  
-- Overall storyline of the work
-  
+**Problem statement :**
+<br>
+- software extension is important : add features, improve performance/security etc
+- current extension frameworks face challenges : balancing key extensibility features
+ 1. trade off between extension interconnectedness vs. safety
+ 2. trade off between extension isolation vs. safety
 <br>
 
-**Storyline Summary:**  
-1. Why the problem is important  
-2. What prior works exist and their limitations  
-3. What this paper proposes  
-4. What challenges the design faces  
-5. How the design overcomes them  
-6. What results show
-   
+**Design principle :**
+<br>
+- presents EIM : a new approach for specifying the interface between an extension and a host
+- presents bpftime : a new extension runtime system
+- 
 <br>
 
-**Notes (if unclear parts):**  
+**Overall storyline of the work :**
+*( what is the problem, what are the most relevant related works, what are the claimed limitations, the mapping between the design points and the challenges.)*
+<br>
 
 <br> <br>
 
