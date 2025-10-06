@@ -6,7 +6,7 @@
 <br>
 
 ## Summary :
-**Background**
+**Background**  
  Application extension is very important because it can improve performance, add features, enhance security, etc. 
 <br>
 
@@ -34,8 +34,6 @@ By fulfilling each extension's requirements for security/efficiency level, it so
 
 ## 0. Abstract
 - **High-level Problem statement**
-  
-  <br>
   
   *( what kind of the problem the paper is trying to solve, why is this a significant and/or interesting problem, what is the limitation of the prior work)*
   : the current state-of-the-art is neither safe nor efficient enough.
