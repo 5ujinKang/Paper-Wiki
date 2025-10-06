@@ -120,12 +120,11 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 ### Implementation
 **Before reading, think of how to implement the design :**  
 
-**Make sure you understand the storyline**
-
 <br>
 
+**Make sure you understand the storyline**
+<br>
 go to the Summary from the front, fill out the blank.
-
 <br> <br>
 
 ## 3. Evaluation
