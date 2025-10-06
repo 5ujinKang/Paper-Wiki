@@ -90,6 +90,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 ### Background
 **Motivation of the problem :**
 *(why this is a significant problem to solve)*
+<br>
 Current state-of-the-art frameworks can't fulfill Key Extension Framework Features
 
 <br>
@@ -115,7 +116,7 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 
 **What were their limitations? :**
 - native execution : No isolation, Don't support fine-grained safety/interconnectedness tradeoffs.
-- SFI-based tools : Some of they can't handle safety/interconnectedness tradeoff correctly. & inefficient (validate extension behavior at runtime)
+- SFI-based tools : They can't handle safety/interconnectedness tradeoff correctly & inefficient (validate extension behavior at runtime)
 - Subprocess Isolation :
   - Even though some could provide fine-grained interconnectedness/safety tradeoffs, they do so after code changes to the host application
   - have context-switch-like overheads => inefficient for frequently-executed extension use-cases
@@ -129,6 +130,7 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 ---
 ### Design
 **Design principle(s) :**
+
 <br>
 
 **Design goals or challenges :**  
@@ -136,6 +138,8 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 
 **How the design addresses the challenges :**  
 <br>
+- EIM : represent the extension features that might be necessary for interconnectedness or restricted for safety as a resource -> fit with fine-grained interconnectedness/safety tradeoffs.
+- bpftime : ensure that the extensions loaded into an application follow their EIM specification, ensuring their safety.
 
 ---
 ### Implementation
