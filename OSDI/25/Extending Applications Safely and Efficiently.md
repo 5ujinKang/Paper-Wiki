@@ -11,18 +11,17 @@ Application extension is very important because it can improve performance, add 
 <br>
 
 **Attack Point**
-But the current tools are neither safe nor efficient, because they suffer from a security-efficiency tradeoff. <br>
-Since every extension has different requirements for security & efficiency, it's hard to optimize the environment for each.
+But the current tools are neither safe nor efficient, because they can't fulfill the extension security (fine-grained interconnectedness vs. security tradeoff), isolation, and efficiency. <br>
+
 <br>
 
 **Goal**
-Suggest the way to extend Applications Safely and Efficiently 
+Find a way to fulfill three key criteria for extension.
 <br>
 
 **Their Solution** 
-Suggest a new model EIM, optimize for each extension, fulfilling their requirements for security & efficiency level. <br>
-EIM abstracts the features of extension by seeing extension as a "resource", and provides a framework to deal with each. <br>
-By fulfilling each extension's requirements for security/efficiency level, it solves the security-efficiency trade-off problem. 
+Suggest a new model EIM, serve fine-grained interconnectedness/Security problem by providing abstraction. "resource" to demonstrate the level of interconnectedness and security for each extension <br>
+Also, for the isolation, they suggest an extension framework bpftime. 
 <br>
 
 **Performance**
@@ -148,8 +147,12 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
 
 ---
 ### Implementation
-**Before reading, think of how to implement the design :**  
+**Make sure you understand the storyline**
+<br>
+go to the Summary from the front, fill out the blank.
+<br>
 
+**Before reading, think of how to implement the design :**  
 <br>
 
 - EIM :  
@@ -160,9 +163,6 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
 - bpftime :
  - ㅎ
 
-**Make sure you understand the storyline**
-<br>
-go to the Summary from the front, fill out the blank.
 <br> <br>
 
 ## 3. Evaluation
