@@ -87,33 +87,44 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 <br> <br>
 
 ## 2. Low-Level Details
+### Background
+**Motivation of the problem :**
+*(why this is a significant problem to solve)*
 
 <br>
 
-### Background
-- **What is the motivation behind the problem?**  
-- **What background knowledge does the paper provide?**  
-- **Did I fully understand why the problem is significant?**
+**Background knowledge to understand this paper :**
+
 
 <br>
 
 ### Motivation
-- **How did prior work solve the problem?**  
-- **What were their limitations?**
+**How the prior work solves the problem :**
+
+<br>
+
+**What were their limitations? :**
 
 <br>
 
 ### Design
-- **Design principle(s):**  
-- **Design goals or challenges:**  
-- **How the design addresses the challenges:**  
+**Design principle(s) :**
+<br>
 
+**Design goals or challenges :**  
+<br>
+
+**How the design addresses the challenges :**  
 <br>
 
 ### Implementation
-- **My guess of implementation before reading:**  
-- **Key implementation details learned:**  
-- **Does the implementation strengthen the storyline understanding?**  
+**Before reading, think of how to implement the design :**  
+
+**Make sure you understand the storyline**
+
+<br>
+
+go to the Summary from the front, fill out the blank.
 
 <br> <br>
 
