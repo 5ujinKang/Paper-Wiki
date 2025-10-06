@@ -45,14 +45,14 @@ Also, for the isolation, they suggest an extension framework bpftime.
 **High-level Problem statement :**  
   *( what kind of the problem the paper is trying to solve, why is this a significant and/or interesting problem, what is the limitation of the prior work)*
   <br>
-  the current state-of-the-art is neither safe nor efficient enough.
+  The current state-of-the-art is neither safe nor efficient enough.
 
 <br>
 
 **High-level design principle / key novelty :** 
 <br>
-presents new model, EIM and extension framework that enforces an EIM specification, bpftime.
-  - Extension Interface Model (EIM) : model that treats each required feature of an extension as a resource
+presents a new model, EIM, and extension framework that enforces an EIM specification, bpftime.
+  - Extension Interface Model (EIM) : a model that treats each required feature of an extension as a resource
 
 
 <br> <br>
@@ -61,10 +61,10 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 **Problem statement :**
 <br>
 - software extension is important : add features, improve performance/security etc
-- current extension frameworks are inefficient because they employ heavyweight techniques for isolation and safety
+- Current extension frameworks are inefficient because they employ heavyweight techniques for isolation and safety
   1. extension safety : tradeoff between extension interconnectedness vs. safety (deployment specific)
-  2. extension isolation : prevents a host appication from harming an extension, necessary for security monitoring extensions
-  3. extension efficiency : requires the extensions execute at near-native speed
+  2. extension isolation : prevents a host application from harming an extension, necessary for security monitoring extensions
+  3. extension efficiency : requires the extensions to execute at near-native speed
 <br>
 
 **the design principle of the work :**
@@ -86,8 +86,8 @@ presents new model, EIM and extension framework that enforces an EIM specificati
   1. uses lightweight approaches : provide extension safety & isolation
       - for safety : Uses extended Berkeley Packet Filter (eBPF) style verification => 0 runtime overhead
       - for isolation : uses ERIM-style intraprocess hardware-supported isolation => minimal overhead
-  2. introduces concealed extention entries : improve efficiency by eliminating runtime overhead from extension entries that are not in use by a running process
-  - fully compatible with with eBPF -> can extend both the kernel & applications
+  2. introduces concealed extension entries : improve efficiency by eliminating runtime overhead from extension entries that are not in use by a running process
+  - fully compatible with eBPF -> can extend both the kernel & applications
 
 <br> <br>
 
@@ -112,11 +112,11 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 ---
 ### Motivation
 **How the prior work solves the problem :**
-- native execution : execute the application & extension in the same execution context, essentially treating the extension as  component of the original program.
+- native execution : execute the application & extension in the same execution context, essentially treating the extension as a  component of the original program.
 - SFI-based tools : many frameworks use SFI to provide isolation.
 - Subprocess Isolation : separate extensions from the host application through OS isolation abstractions
 - eBPF uprobes : eBPF framework provides userspace extensions through the uprobe interface
-- Aspect-oriented progrmming : allows extenions
+- Aspect-oriented progrmming : allows extensions
 <br>
 
 **What were their limitations? :**
@@ -134,7 +134,9 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 
 ---
 ### Design
-**Design principle(s) :**
+**Design principles :**
+- Use lightweight techniques to provide safety and isolation
+- Figure out the way to solve fine-grained interconnectedness/safety
 - Handle buggy extensions. Keep the system stable 
 - Don't let the application modify or corrupt the state used by extensions to alter the extension's behavior
 
@@ -142,14 +144,20 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 
 **Design goals or challenges :**  
 <br>
-Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation efficiently.
-
+- EIM : Deal fine-grained safety/interconnectedness tradeoff well
+- bpftime : achieve Isolation and safety efficiently. Support EIM well.
 <br>
 
 **How the design addresses the challenges :**  
 <br>
 - EIM : represent the extension features that might be necessary for interconnectedness or restricted for safety as a resource -> fit with fine-grained interconnectedness/safety tradeoffs.
-- bpftime : ensure that the extensions loaded into an application follow their EIM specification, ensuring their safety.
+- bpftime :
+  - Support EIM : uses separate lightweight approaches for EIM specifications enforcement
+  - Extension Isolation : 2 separate verification techniques for kernel extensions
+    - employing eBPF-style :0 runtime overhead
+    - using ERIM-style intra-process hardware-supported isolation : efficient extension isolation
+  - introduce concealed extension entries using binary rewriting : less overhead
+  - compatible with eBPF : widely used.
 
 ---
 ### Implementation
@@ -161,10 +169,12 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
   - Because it is also intended to work with the kernel, additional factors like privilege levels must be considered.
   - Abstractly speaking, system-level design is inherently complex, but since EIM is primarily a methodology, the actual functionality is implemented by bpftime. 
 
-- bpftime :
- - ㅎ
+- bpftime : 
+ - "How to implement the system to enforce EIM specifications as a lightweight way?" Seems like a very difficult problem. How can it be possible? Maybe we can because EIM itself is already encapsulated and uses API-like tasks here?
+ - concealing extension entries also takes tasks such as watching each entries are idle or not. Even though it takes tasks, the overhead for letting them idle is expensive than concealing?
 
 <br>
+bpftime is generally simmilar to eBPF
 <br>
 
 ## 3. Evaluation
