@@ -11,12 +11,12 @@ Application extension is very important because it can improve performance, add 
 <br>
 
 **Attack Point**
-But the current tools are neither safe nor efficient, because they can't fulfill the extension security (fine-grained interconnectedness vs. security tradeoff), isolation, and efficiency. <br>
+But the current tools are neither safe nor efficient, because they can't fulfill the extension security (fine-grained interconnectedness vs. security tradeoff), isolation, and efficiency at the same time. <br>
 
 <br>
 
 **Goal**
-Find a way to fulfill three key criteria for extension.
+Find a way to fulfill three key criteria simultaneously for the extension.
 <br>
 
 **Their Solution** 
@@ -147,11 +147,6 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
 
 ---
 ### Implementation
-**Make sure you understand the storyline**
-<br>
-go to the Summary from the front, fill out the blank.
-<br>
-
 **Before reading, think of how to implement the design :**  
 <br>
 
@@ -163,9 +158,16 @@ go to the Summary from the front, fill out the blank.
 - bpftime :
  - ㅎ
 
-<br> <br>
+<br>
+<br>
 
 ## 3. Evaluation
+### Before reading
+**Make sure you understand the storyline**
+<br>
+go to the Summary from the front, fill out the blank.
+<br>
+
 
 <br>
 
