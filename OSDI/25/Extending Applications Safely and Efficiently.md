@@ -94,17 +94,21 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 <br>
 
 **Background knowledge to understand this paper :**
-
+- Key Extension Framework Features
+  - Fine-grained Safety/Interconnectedness tradeoffs
+    : There is no single definition of safety appropriate for all extension use-cases
+  - Isolation : Extension must be isolated = ensuring that host applications cannot modify extension states
+  - Efficiency
 
 <br>
 
 ### Motivation
 **How the prior work solves the problem :**
-
+- native execution : execute the application & extension in the same execution context, essentially treating the extension as  component of the original program.
 <br>
 
 **What were their limitations? :**
-
+- native execution : No isolation, Don't support fine-grained safety/interconnectedness tradeoffs.
 <br>
 
 ### Design
