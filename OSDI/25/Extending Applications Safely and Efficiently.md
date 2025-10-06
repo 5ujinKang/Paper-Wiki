@@ -12,13 +12,13 @@ Application extension is very important because it can improve performance, add 
 <br>
 
 **Attack Point**
-&nbsp; &nbsp; &nbsp; 
-But the current tools are neither safe nor efficient, because they suffer from a security-efficiency tradeoff. 
+&nbsp; &nbsp;
+But the current tools are neither safe nor efficient, because they suffer from a security-efficiency tradeoff. <br>
 Since every extension has different requirements for security & efficiency, it's hard to optimize the environment for each.
 <br>
 
 **Their Solution** 
-&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;
 Suggest a new model EIM, optimize for each extension, fulfilling their requirements for security & efficiency level. 
 EIM abstracts the features of extension by seeing extension as a "resource", and provides a framework to deal with each. 
 By fulfilling each extension's requirements for security/efficiency level, it solves the security-efficiency trade-off problem. 
