@@ -168,22 +168,18 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
 go to the Summary from the front, fill out the blank.
 <br>
 
-
+**What questions should the evaluation answer?**
+(e.g., Does it outperform? Improve reliability?)  
 <br>
 
-**Before reading:**  
-- What questions should the evaluation answer? (e.g., Does it outperform? Improve reliability?)  
-
-<br>
-
-**While reading:**  
+### While reading:  
 - Are those questions addressed?  
 - Are explanations of results logical?  
 - Any suspicious or unclear claims?  
 
 <br>
 
-**Key Results Summary:**  
+### Key Results Summary:  
 
 <br> <br>
 
