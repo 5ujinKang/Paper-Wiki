@@ -124,7 +124,7 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
   - Don't support fine-grained interconnectedness/safety tradeoffs
   - not efficient : eBPF uprobes place a software breakpoint on every extension entry, causing the system to trap into the kernel to execute each extension
 - Aspect-oriented Programming : Don't support safety/interconnectedness tradeoffs
-- 
+
 <br>
 
 ---
@@ -139,6 +139,8 @@ Current state-of-the-art frameworks can't fulfill Key Extension Framework Featur
 <br>
 Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation efficiently.
 
+<br>
+
 **How the design addresses the challenges :**  
 <br>
 - EIM : represent the extension features that might be necessary for interconnectedness or restricted for safety as a resource -> fit with fine-grained interconnectedness/safety tradeoffs.
@@ -149,6 +151,7 @@ Deal fine-grained safety/interconnectedness tradeoff well and achieve Isolation 
 **Before reading, think of how to implement the design :**  
 
 <br>
+
 - EIM :  
   - As a framework to abstract the levels of interconnectedness and security, it requires elements such as fields and methods in a class, making it function like an API.
   - Because it is also intended to work with the kernel, additional factors like privilege levels must be considered.
