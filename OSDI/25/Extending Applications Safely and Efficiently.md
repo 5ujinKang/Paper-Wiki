@@ -102,6 +102,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 
 <br>
 
+---
 ### Motivation
 **How the prior work solves the problem :**
 - native execution : execute the application & extension in the same execution context, essentially treating the extension as  component of the original program.
@@ -111,6 +112,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 - native execution : No isolation, Don't support fine-grained safety/interconnectedness tradeoffs.
 <br>
 
+---
 ### Design
 **Design principle(s) :**
 <br>
@@ -121,6 +123,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 **How the design addresses the challenges :**  
 <br>
 
+---
 ### Implementation
 **Before reading, think of how to implement the design :**  
 
