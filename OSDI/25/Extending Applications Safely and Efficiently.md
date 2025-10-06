@@ -90,6 +90,7 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 ### Background
 **Motivation of the problem :**
 *(why this is a significant problem to solve)*
+Current state-of-the-art frameworks can't fulfill Key Extension Framework Features
 
 <br>
 
@@ -106,10 +107,23 @@ presents new model, EIM and extension framework that enforces an EIM specificati
 ### Motivation
 **How the prior work solves the problem :**
 - native execution : execute the application & extension in the same execution context, essentially treating the extension as  component of the original program.
+- SFI-based tools : many frameworks use SFI to provide isolation.
+- Subprocess Isolation : separate extensions from the host application through OS isolation abstractions
+- eBPF uprobes : eBPF framework provides userspace extensions through the uprobe interface
+- Aspect-oriented progrmming : allows extenions
 <br>
 
 **What were their limitations? :**
 - native execution : No isolation, Don't support fine-grained safety/interconnectedness tradeoffs.
+- SFI-based tools : Some of they can't handle safety/interconnectedness tradeoff correctly. & inefficient (validate extension behavior at runtime)
+- Subprocess Isolation :
+  - Even though some could provide fine-grained interconnectedness/safety tradeoffs, they do so after code changes to the host application
+  - have context-switch-like overheads => inefficient for frequently-executed extension use-cases
+- eBPF uprobes :
+  - Don't support fine-grained interconnectedness/safety tradeoffs
+  - not efficient : eBPF uprobes place a software breakpoint on every extension entry, causing the system to trap into the kernel to execute each extension
+- Aspect-oriented Programming : Don't support safety/interconnectedness tradeoffs
+- 
 <br>
 
 ---
