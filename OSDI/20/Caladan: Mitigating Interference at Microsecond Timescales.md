@@ -144,6 +144,7 @@ Design
 <br> <br>
 
 ## Insights: 
+- core allocation can be a way to achieve performance isolation than resource partitioning
 
 
 
