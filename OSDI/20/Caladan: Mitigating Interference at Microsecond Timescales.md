@@ -145,6 +145,7 @@ Design
 
 ## Insights: 
 - core allocation can be a way to achieve performance isolation than resource partitioning
+- make a tool to define the state (like using control signal to differentiate the interference) can be good way to deal with the tradeoff like problem
 
 
 
