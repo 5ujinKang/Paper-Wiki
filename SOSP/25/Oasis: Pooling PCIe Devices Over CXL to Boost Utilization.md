@@ -20,7 +20,7 @@ Oasis: a system that enables pooling PCIe devices in software.
 ## Challenges
 - CXL memory pool devices are not cache-coherent across hosts. -> to make it work as cache-coherent way
   1. Solve the overhead from cache line invalidations & memory fences
-  2. Requires an efficient message channel over shared CXL memory
+  2. Requires an efficient message channel over shared CXL memory = enable prefetch
 
 ## Design
 goal: reuse existing CXL pod designs
@@ -28,7 +28,7 @@ goal: reuse existing CXL pod designs
     - Allows I/O buffers, signaling message channels to be allocated in the shared CXL memory -> can be accessed by any hosts within a CXL pod directly.
     - I/O buffers : PCIe devices (e.g., NICs and SSDs) typically access I/O buffers directly via DMA (bypass CPU caches for I/O buffers)
     - Message channels :  modify the receiver to invalidate a cache line once all messages in it have been consumed -> prefetching always bring in new messages.,remove premature prefetching (stale cache lines)
-3. Centralized control plane = pod-wide allocator : maps devices - hosts / load balancing / failure mitigation
+2. Centralized control plane = pod-wide allocator : maps devices - hosts / load balancing / failure mitigation
 
 ## Implementation
 1. Oasis Engine : Frontend Driver <-communicate over datapath-> Backend driver(PCIe device is here)
@@ -38,10 +38,12 @@ goal: reuse existing CXL pod designs
 Oasis improves the NIC utilization by 2× and handles NIC failover with only a 38 ms interruption.
 
 ## Limitation
-1. CXL failures : the most common CXLrelated failure arises from CXL link/cable faults. -> should have resilient CXL pod designs.
+1. CXL failures : the most common CXL related failure arises from CXL link/cable faults. -> should have resilient CXL pod designs.
 2. QoS control for CXL bandwidth : What if CXL bandwidth is saturated? -> may rebalance traffic (ex. with intelRDT) 
 
-## Insight
-
+## Meeting
+- Completeness : Design Complete / Read lots of paper
+- Limitation : work with Cloud. Not data center -> Why can't work with data center?
+  1. DDIO, 2. zero-copy technique
 
 
