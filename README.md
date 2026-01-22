@@ -43,10 +43,21 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 </details>
 
 <details>
-<summary>2025</summary>
+<summary>2025 (4)</summary>
 
 - OSDI '20 / Caladan: Mitigating Interference at Microsecond Timescales
 - OSDI '25 / Extending Applications Safely and Efficiently
+- OSDI / Disentangling the Dual Role of NIC Receive Rings
+- HPCA / Criticality-Aware Instruction-Centric Bandwidth Partitioning for Data Center Applications
+
+</details>
+
+<details>
+<summary>2026 (3)</summary>
+
+- SOSP/25/Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation
+- SOSP/25/Spirit: Fair Allocation of Interdependent Resources in Remote Memory Systems
+- SOSP/25/Oasis: Pooling PCIe Devices Over CXL to Boost Utilization
 
 </details>
 
