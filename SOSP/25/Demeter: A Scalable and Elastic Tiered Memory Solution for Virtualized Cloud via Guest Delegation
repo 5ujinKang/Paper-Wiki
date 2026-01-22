@@ -1,0 +1,39 @@
+# Background
+DRAM is a scalability bottleneck. The increasement speed of maximum mem capacity is smuch slower than cpu increasement.
+- CPU core count increased 15 -> 144
+- But maximum memory capacity increased 1.5 -> 4TB
+
+## Solution
+Tiered memory Architecture: faster-small/slower-big memory tier -> divide and use smartly
+- 
+
+# Problems
+For TMM, virtualized cloud infrastructure relies on the hypervisor in the host machine. 
+Existing hypervisor-based approaches suffer from significant performance penalties.
+- Tracking the Page Table Entry Access/Dirty bits : 
+- Processor Event-Based Samplings (PEBS): 
+
+# Key Idea
+Guest-delegated tiered memory management
+
+# Solution: High Level
+
+
+# Solution: Low Level
+
+
+# Evaluation
+
+
+# Insight
+
+
+# Good Points
+: have both Architectural insight & Technical contributions
+- High Level/ Architectural insight: Delegate 
+- Low Level/ Technical contributions: 
+
+# Bad Points
+- Emphasize the limition too much
+- 
+
