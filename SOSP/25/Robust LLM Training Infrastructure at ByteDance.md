@@ -27,17 +27,17 @@ Fail-stop, diagnosis, and reassuming procedure incur too much overhead. even tak
 Efficient incident diagnosis & handling with minimal unproductive time.
   
 # Key Idea
-Extends LLM training job to leverage fine-grained process management.  
+Extends LLM training job to leverage fine-grained process management. <br>
 -> capable of leveraging runtime information for failure detection and achieving fast   recovery.
   
   
 # Solution: High Level
 1. Prioritize rapid isolation, not precise localization  
-   : precise failure pinpointing can leave vast GPUs idle.
-   -> lightweight real-time detection with hierarchical stop-time diagnostics, quickly singling out faulty machines with minimal overhead: But this is not accurate
-   -> datadriven clustering of runtime stack-traces to isolate suspect machines, overevicting them rather than chasing exact root causes.
+   : precise failure pinpointing can leave vast GPUs idle. <br>
+   -> lightweight real-time detection with hierarchical stop-time diagnostics, quickly singling out faulty machines with minimal overhead: But this is not accurate<br>
+   -> datadriven clustering of runtime stack-traces to isolate suspect machines, overevicting them rather than chasing exact root causes.<br>
      
-2. Control variablity during swift recovery
+2. Control variability during swift recovery
    - Automated fault tolerance framework + machine fault detection and diagnostics with code rollback for rapid verification and recovery.
    - User code changes are merged with deterministic failures through a lazy update approach, utilizing the inevitability and high frequency of failures.
   
