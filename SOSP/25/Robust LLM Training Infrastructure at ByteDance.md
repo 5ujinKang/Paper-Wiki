@@ -16,6 +16,10 @@ Fail-stop, diagnosis, and reassuming procedure incur too much overhead. even tak
 ** Better focus on 1st. analyse why the phase actually takes that much time.  
   
 # Problem
+Effectively mitigating diagnosis and recovery overhead of various failures and restarts is crucial to ensure training efficiency of large-scale LLMs, but is complicated.
+1. Complex root causes of failures.
+2. Implicit failures are hard to detect and locate.
+3. Uncertainty and high overhead of failover.
   
 # Prior Solution
 1. implicit failures -> hard to detect and handle  
@@ -25,10 +29,11 @@ Fail-stop, diagnosis, and reassuming procedure incur too much overhead. even tak
 
 # Goal
 Efficient incident diagnosis & handling with minimal unproductive time.
-  
+: automatically diagnosing and addressing various training incidents while minimizing unproductive time.
+
 # Key Idea
 Extends LLM training job to leverage fine-grained process management. <br>
--> capable of leveraging runtime information for failure detection and achieving fast   recovery.
+-> leverage runtime information for failure detection and achieving fast recovery.
   
   
 # Solution: High Level
@@ -47,15 +52,22 @@ Extends LLM training job to leverage fine-grained process management. <br>
   
   
 # Solution: Low Level
-
-
-# Evaluation
+- Control Plane
+  - Robust Controller : orchestrates an automated failure mitigation framework
+  - Runtime Analyzer : addresses job hangs & performance degradations
+- Data Plane: resides within each training pod
 
 
 # Interesting Points
 - Optimization techniques and parallelization strategies derived from small-scale testing are often suboptimal at large scales.
 
 # Good Points
-
-
+1. handling Large-Scale : 16,384 GPU
+2. Fault tolerance -> redundancy
+3. Step-by-Step error detection procedure & prove it works.
+4. Lots of technical implementations
+   
 # Bad Points
+1. No contents in abstract.
+2. No novelty
+
