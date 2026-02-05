@@ -30,4 +30,18 @@ Current systems lack support for efficiently training models on heterogeneous re
 - distributed training framework: adds support for heterogeneous configurations to execute the planner’s configurations. It also adds support for fault tolerance and elasticity, enabling adaptation to changes in resource availability.
 
 # Insight
+Cons
+- No insight
+- lack of "why" of the prior work's limitation
 
+Pros
+[Smartly solved a problem in an ML situation using ML's Characteristics]
+- predictable -> simulation
+- Domain knowledge -> prune the search space
+- Only consider Throughput
+
+- It's solid
+  - Background: short + deliver minimal necessary information
+  - Motivation: 3.1) gives 3 reasons / 3.2) Detailed survey of prior works, well-backed evidence - citations or numbers, Every piece of conclusion is supported by multiple evidence & arguments
+  - 4.2.1) 6 techniques = Design is solid
+  - Evaluation: lots of evaluation, lots of baselines
