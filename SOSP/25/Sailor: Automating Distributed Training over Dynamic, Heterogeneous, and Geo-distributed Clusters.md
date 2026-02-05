@@ -1,0 +1,33 @@
+- link : file:///home/user/Downloads/3731569.3764839.pdf
+
+# Title
+Sailor: Automating Distributed Training over Dynamic,  Heterogeneous, and Geo-distributed Cluster
+
+# Problem
+Current systems lack support for efficiently training models on heterogeneous resources.
+
+# Background
+- Allowing a training job to run on heterogeneous GPU types and/or GPUs distributed across zones (i.e., with heterogeneous inter-node bandwidth) can give model developers access to more GPUs per job to increase training throughput.
+- However, supporting heterogeneous, geo-distributed resources introduces several challenges.
+
+# Goal
+- a system for efficient largescale training over heterogeneous resources with dynamic availability.
+- automates distributed training over heterogeneous, geo-distributed, and dynamically available resources.
+
+# Challenges
+1. Quickly searching a vast configuration space.
+2. Accurately simulating memory footprint and iteration time.
+3. Supporting both heterogeneous plans and seamless elasticity in a real distributed training framework.
+
+# Priorwork's Limitation
+1. current works do not co-optimize the resource allocation with the job parallelization plan.
+2. existing systems rely on inaccurate simulators to estimate the training throughput and memory footprint of candidate configurations
+3. state-of-the-art distributed training frameworks like Megatron-LM [54] are slow to reconfigure jobs and do not support heterogeneous job parallelization plans or different microbatch sizes per GPU, which is necessary to maximize throughput and minimize cost in heterogeneous clusters.
+
+# Design
+- configuration planner: navigates the search space of resource allocations and job parallelization plan combinations. It recommends configurations that optimize a user-defined objective (e.g., max throughput or min cost) under constraints (e.g., max budget or min throughput).
+- simulator: accurately model iteration time and memory footprint for any given configuration.
+- distributed training framework: adds support for heterogeneous configurations to execute the planner’s configurations. It also adds support for fault tolerance and elasticity, enabling adaptation to changes in resource availability.
+
+# Insight
+
