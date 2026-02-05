@@ -22,7 +22,7 @@ Current systems lack support for efficiently training models on heterogeneous re
 # Priorwork's Limitation
 1. current works do not co-optimize the resource allocation with the job parallelization plan.
 2. existing systems rely on inaccurate simulators to estimate the training throughput and memory footprint of candidate configurations
-3. state-of-the-art distributed training frameworks like Megatron-LM [54] are slow to reconfigure jobs and do not support heterogeneous job parallelization plans or different microbatch sizes per GPU, which is necessary to maximize throughput and minimize cost in heterogeneous clusters.
+3. state-of-the-art distributed training frameworks like Megatron-LM are slow to reconfigure jobs and do not support heterogeneous job parallelization plans or different microbatch sizes per GPU, which is necessary to maximize throughput and minimize cost in heterogeneous clusters.
 
 # Design
 - configuration planner: navigates the search space of resource allocations and job parallelization plan combinations. It recommends configurations that optimize a user-defined objective (e.g., max throughput or min cost) under constraints (e.g., max budget or min throughput).
