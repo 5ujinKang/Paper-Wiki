@@ -53,12 +53,11 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 </details>
 
 <details>
-<summary>2026 (4)</summary>
+<summary>2026 (5)</summary>
 
 - SOSP/25/Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation
 - SOSP/25/Spirit: Fair Allocation of Interdependent Resources in Remote Memory Systems
 - SOSP/25/Oasis: Pooling PCIe Devices Over CXL to Boost Utilization
 - SOSP/25/Robust LLM Training Infrastructure at ByteDance.
-
+- SOSP/25/Sailor: Automating Distributed Training over Dynamic, Heterogeneous, and Geo-distributed Clusters
 </details>
-
