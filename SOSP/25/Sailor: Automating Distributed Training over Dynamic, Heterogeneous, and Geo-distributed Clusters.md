@@ -1,4 +1,4 @@
-- link : file:///home/user/Downloads/3731569.3764839.pdf
+- link : https://dl.acm.org/doi/epdf/10.1145/3731569.3764839
 
 # Title
 Sailor: Automating Distributed Training over Dynamic,  Heterogeneous, and Geo-distributed Cluster
