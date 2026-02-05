@@ -11,7 +11,7 @@ Current systems lack support for efficiently training models on heterogeneous re
 - However, supporting heterogeneous, geo-distributed resources introduces several challenges.
 
 # Goal
-- a system for efficient largescale training over heterogeneous resources with dynamic availability.
+- a system for efficient large-scale training over heterogeneous resources with dynamic availability.
 - automates distributed training over heterogeneous, geo-distributed, and dynamically available resources.
 
 # Challenges
@@ -20,25 +20,36 @@ Current systems lack support for efficiently training models on heterogeneous re
 3. Supporting both heterogeneous plans and seamless elasticity in a real distributed training framework.
 
 # Priorwork's Limitation
-1. current works do not co-optimize the resource allocation with the job parallelization plan.
-2. existing systems rely on inaccurate simulators to estimate the training throughput and memory footprint of candidate configurations
+1. Current works do not co-optimize the resource allocation with the job parallelization plan.
+2. Existing systems rely on inaccurate simulators to estimate the training throughput and memory footprint of candidate configurations
 3. state-of-the-art distributed training frameworks like Megatron-LM are slow to reconfigure jobs and do not support heterogeneous job parallelization plans or different microbatch sizes per GPU, which is necessary to maximize throughput and minimize cost in heterogeneous clusters.
 
 # Design
+- profiler: Collects information about the training job, the compute nodes and network bandwidth.
 - configuration planner: navigates the search space of resource allocations and job parallelization plan combinations. It recommends configurations that optimize a user-defined objective (e.g., max throughput or min cost) under constraints (e.g., max budget or min throughput).
 - simulator: accurately model iteration time and memory footprint for any given configuration.
 - distributed training framework: adds support for heterogeneous configurations to execute the planner’s configurations. It also adds support for fault tolerance and elasticity, enabling adaptation to changes in resource availability.
 
+# Solution
+1. Current works do not co-optimize the resource allocation with the job parallelization plan: Do -> creates a vast search space -> 1) prunes the search space with heuristics that consider training memory footprint, GPU capacity, and scalability constraints. 2) applies dynamic programming to reuse information about the performance of parallelization plans.
+2. Existing systems rely on inaccurate simulators to estimate the training throughput and memory footprint of candidate configurations: with more signals, with a certain formula
+3. state-of-the-art distributed training frameworks like Megatron-LM are slow to reconfigure jobs and do not support heterogeneous job parallelization plans or different microbatch sizes per GPU, which is necessary to maximize throughput and minimize cost in heterogeneous clusters. : let the model work on Megatron
+
+# Limitation
+- Heterogeneity: May prevent the use of high-performance collective communication libraries
+- Geo-distributed networks are prone to unreliability, including unpredictable jitter and packet loss.
+- The optimization parallelization strategies are based on homogeneous settings -> maybe need to develop other strategies.
+   
 # Insight
 Cons
 - No insight
 - lack of "why" of the prior work's limitation
 
 Pros
-[Smartly solved a problem in an ML situation using ML's Characteristics]
-- predictable -> simulation
-- Domain knowledge -> prune the search space
-- Only consider Throughput
+- Smartly solved a problem in an ML situation using ML's Characteristics
+  - predictable -> simulation  
+  - Domain knowledge -> prune the search space
+  - Only consider Throughput
 
 - It's solid
   - Background: short + deliver minimal necessary information
