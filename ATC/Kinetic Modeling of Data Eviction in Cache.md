@@ -4,7 +4,6 @@ Kinetic Modeling of Data Eviction in Cache
 
 # Background
 The reuse distance (LRU stack distance) is an essential  metric for performance prediction and optimization of  storage and CPU cache.
-- What is the reuse distance?
 
 # Problem
 
