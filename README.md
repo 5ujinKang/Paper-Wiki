@@ -3,9 +3,7 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 
 
 ## To read a paper
- - Aim to read 2 papers per week (1 paper for holiday season)
-- Read widely in Systems / upto 5 recent years  
-- from : SOSP, OSDI, SIGCOMM // ASPLOS, NSDI, ISCA, MICRO //
+ - Aim to read 2 papers per week
 
 # Paper-List
 <details>
@@ -44,21 +42,29 @@ Personal wiki for Systems research : paper summaries, questions, and key insight
 
 <details>
 <summary>2025 (4)</summary>
-
 - OSDI '20 / Caladan: Mitigating Interference at Microsecond Timescales
 - OSDI '25 / Extending Applications Safely and Efficiently
 - OSDI / Disentangling the Dual Role of NIC Receive Rings
 - HPCA / Criticality-Aware Instruction-Centric Bandwidth Partitioning for Data Center Applications
-
+ 
 </details>
 
 <details>
 <summary>2026 (6)</summary>
-
+<br> 1月 （4/9）
 - SOSP/25/Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation
 - SOSP/25/Spirit: Fair Allocation of Interdependent Resources in Remote Memory Systems
 - SOSP/25/Oasis: Pooling PCIe Devices Over CXL to Boost Utilization
 - SOSP/25/Robust LLM Training Infrastructure at ByteDance.
++ ADD SPRING 2025
+
+<br> 2月 （2/8）
 - SOSP/25/Sailor: Automating Distributed Training over Dynamic, Heterogeneous, and Geo-distributed Clusters
 - ATC: Kinetic Modeling of Data Eviction in Cache
+- CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices []
+- μFork: Supporting POSIX fork Within a Single-Address-Space OS []
+- LithOS: An Operating System for Efficient Machine Learning on GPUs []
+- Disentangling the Dual Role of NIC Receive Rings []
+- Extending Applications Safely and Efficiently []
+- Deterministic Client: Enforcing Determinism on Untrusted Machine Code []
 </details>
